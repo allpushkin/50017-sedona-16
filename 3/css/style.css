@@ -1,3 +1,4 @@
+/* stylelint-disable */
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 /* Document
    ========================================================================== */
@@ -373,7 +374,7 @@ body {
   margin-bottom: 50px; }
 
 .page-caption__wrapper {
-  background-image: url(../../img/bg-back-mobile@1x.jpg);
+  background-image: url("../../img/bg-back-mobile@1x.jpg");
   background-repeat: no-repeat;
   background-position: 0 50%; }
 
@@ -391,5 +392,96 @@ body {
   line-height: 26px;
   color: #333333;
   text-align: center; }
+
+.advantage-item {
+  padding-top: 40px;
+  padding-bottom: 40px;
+  padding-left: 20px;
+  padding-right: 20px;
+  text-align: center;
+  background-color: #81b3d2; }
+
+.advantage-item__title {
+  font-size: 18px;
+  line-height: 26px;
+  font-weight: bold; }
+
+.advantage-item__number,
+.advantage-item__description {
+  line-height: 21px; }
+
+.advantage-item--main .advantage-item__title,
+.advantage-item--main .advantage-item__number,
+.advantage-item--main .advantage-item__description {
+  color: #ffffff; }
+
+.advantage-item--sub {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  background-color: #efefef; }
+
+.advantage-extra {
+  padding-top: 20px;
+  padding-bottom: 20px; }
+
+.advantage-extra__item {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-left: 60px;
+  padding-right: 40px;
+  text-align: left; }
+
+.advantage-extra__title {
+  margin: 0;
+  font-size: 18px;
+  line-height: 26px;
+  font-weight: 900; }
+
+.advantage-extra__text {
+  margin: 0;
+  line-height: 21px; }
+
+.interested {
+  padding: 30px;
+  text-align: center; }
+
+.interested__title {
+  font-size: 21px;
+  line-height: 26px; }
+
+.interested__text {
+  line-height: 24px; }
+
+.interested__link {
+  font-size: 21px;
+  line-height: 26px;
+  font-weight: 900;
+  color: #ffffff;
+  background-color: #81b3d2;
+  text-decoration: none; }
+
+.page-footer {
+  text-align: center; }
+
+.page-footer__title {
+  font-size: 21px;
+  line-height: 26px;
+  font-weight: bold;
+  color: #000000;
+  text-decoration: none; }
+
+.social {
+  margin: 0;
+  padding: 0;
+  list-style: none; }
+
+.social__link {
+  color: #ffffff;
+  background-color: #81b3d2;
+  text-decoration: none; }
+
+.copyright__text {
+  line-height: 26px;
+  font-weight: 400; }
 
 /*# sourceMappingURL=style.css.map */
