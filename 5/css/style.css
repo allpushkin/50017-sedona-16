@@ -373,8 +373,8 @@ body {
 .main-nav__item a {
   display: block;
   width: auto;
-  padding-top: 8px;
-  padding-bottom: 8px;
+  padding-top: 7px;
+  padding-bottom: 7px;
   font-size: 18px;
   line-height: 40px;
   font-weight: 900;
@@ -427,11 +427,14 @@ body {
   .main-nav__item {
     width: 239px; } }
 
+.page-caption {
+  position: relative; }
+
 .page-caption__wrapper {
   padding-left: 20px;
   padding-right: 20px;
-  padding-top: 40px;
-  padding-bottom: 40px; }
+  padding-top: 30px;
+  padding-bottom: 30px; }
   @media (min-width: 320px) {
     .page-caption__wrapper {
       width: 320px;
@@ -445,14 +448,25 @@ body {
       width: 1200px;
       margin: 0 auto; } }
 
+.page-caption::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  -webkit-transform: translate(-50%);
+          transform: translate(-50%);
+  width: 320px;
+  height: 1px;
+  background-color: #d7d7d7; }
+
 .page-caption__wrapper--image {
   position: relative;
   min-height: 389px;
-  padding-top: 80px;
+  padding-top: 90px;
   text-align: center;
   background-image: url("../img/bg-back-mobile@1x.jpg");
   background-repeat: no-repeat;
-  background-position: 0 50%;
+  background-position: center 0;
   z-index: -1; }
 
 .page-caption__wrapper--image::after {
@@ -468,21 +482,30 @@ body {
 
 .page-caption--inner .page-caption__wrapper--image {
   min-height: 158px;
-  background-position: 0 100%; }
+  padding-top: 50px;
+  background-position: center bottom; }
 
 .page-caption__title {
+  width: 260px;
+  margin: 0 auto;
+  padding-top: 10px;
   font-size: 18px;
   line-height: 26px;
   color: #000000;
   text-align: center; }
 
 .page-caption__subtitle {
+  width: 278px;
+  margin: 0 auto;
   margin-bottom: 0;
+  margin-top: 25px;
   line-height: 26px;
   color: #333333;
   text-align: center; }
 
 @media (min-width: 768px) {
+  .page-caption::after {
+    display: none; }
   .page-caption__wrapper {
     text-align: center; } }
   @media (min-width: 768px) and (min-width: 320px) {
@@ -1038,8 +1061,12 @@ body {
     padding-left: 0;
     padding-right: 0; } }
 
+.photo-post {
+  margin-top: 22px; }
+
 @media (min-width: 768px) {
   .photo-post:nth-of-type(1) {
+    margin-top: 22px;
     width: 648px;
     min-height: 480px; }
   .photo-post:nth-of-type(n+2) {
